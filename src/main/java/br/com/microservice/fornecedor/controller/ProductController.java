@@ -18,7 +18,7 @@ public class ProductController {
 	private IProductService productService;
 	
 	@RequestMapping("/{state}")
-	public List<Product> getProdutosPorEstado(@PathVariable("state") String state) {
+	public List<Product> getProductsByState(@PathVariable("state") String state) {
 		return productService.getProductsByState(state);
 	}
 }
